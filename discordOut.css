@@ -100,7 +100,6 @@
 .theme-light {
 	--logo-primary: rgb(var(--vaccentcolor));
 }
-
 [class*="userPopout"] {
 	--user-popout-position: center;
 }
