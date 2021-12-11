@@ -1,0 +1,116 @@
+/**
+* @name Custom2 CSS
+* @author Mynter
+* @authorLink https://github.com/mynterhu
+* @version 1.0
+* @description Customized
+* @source https://mynter.cf/
+* @website https://mynter.cf
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+
+:root {
+    --dtransparencycolor: 0, 0, 0;
+    --dtransparencyalpha: 0.15;
+    --dmessagetransparency: 0.5;
+    --dguildchanneltransparency: 0.15;
+    --dmemberlisttransparency: 0.0;
+    --daccentcolor: 190, 78, 180;
+
+    --dfont: Fira Code;
+    --dtextshadow: transparent;
+
+    --dbackground: url(https://i.imgur.com/46vKdvA.jpg);
+    --dbackgroundsize: cover;
+    --dbackgroundposition: center;
+    --dblur: unset;
+    --dbackdrop: rgba(0, 0, 0, 0.85);
+
+    --vtransparencycolor: var(--transparencycolor, var(--dtransparencycolor));
+    --vtransparencyalpha: var(--transparencyalpha, var(--dtransparencyalpha));
+    --vmessagetransparency: var(--messagetransparency, var(--dmessagetransparency));
+    --vusechatbubbles: calc(var(--vmessagetransparency) / (var(--vmessagetransparency) + 0.00000000000000000000001));
+    --vguildchanneltransparency: var(--guildchanneltransparency, var(--dguildchanneltransparency));
+    --vmemberlisttransparency: var(--memberlistransparency, var(--dmemberlisttransparency));
+    --vaccentcolor2: var(--vaccentcolor);
+    --vlinkcolor: var(--vaccentcolor);
+
+    --vfont: var(--font, var(--dfont));
+    --vtextshadow: var(--textshadow, var(--dtextshadow));
+
+    --vbackground: var(--background, var(--dbackground));
+    --vbackgroundposition: var(--backgroundposition, var(--dbackgroundposition));
+    --vbackgroundsize: var(--backgroundsize, var(--dbackgroundsize));
+    --vbackgroundblur: var(--backgroundblur, var(--dblur));
+
+    --vpopout: var(--popout, var(--vbackground));
+    --vpopoutposition: var(--backgroundposition, var(--vbackgroundposition));
+    --vpopoutsize: var(--popoutsize, var(--vbackgroundsize));
+    --vpopoutblur: var(--popoutblur, var(--vbackgroundblur));
+
+    --vbackdrop: var(--backdrop, var(--dbackdrop));
+    --vbackdropposition: var(--backgroundposition, var(--vbackgroundposition));
+    --vbackdropsize: var(--backdropsize, var(--vbackgroundsize));
+    --vbackdropblur: var(--backdropblur, var(--vbackgroundblur));
+
+    --fontwhite1: 255, 255, 255;
+    --fontwhite2: 210, 210, 210;
+    --fontwhite3: 170, 170, 170;
+    --fontwhite4: 120, 120, 120;
+
+    --dsettingsicons: 1;
+	--vsettingsicons: var(--settingsicons, var(--dsettingsicons));
+	--usesettingsicons: calc(var(--settingsicons) / (var(--settingsicons) + 0.00000000000000000000001));
+	--settingsiconssize: 18px;
+	--settingsiconsgap: 14px;
+
+    --daccentcolor: 114,137,218;
+	--vaccentcolor: var(--accentcolor, var(--daccentcolor));
+	--daccentcolor2: 255,115,250;
+	--vaccentcolor2: var(--accentcolor2, var(--daccentcolor2));
+	--dlinkcolor: 0,176,244;
+	--vlinkcolor: var(--linkcolor, var(--dlinkcolor));
+	
+	--dfontwhite1: 255,255,255;
+	
+	--vaccentcolor-hover: rgb(var(--vaccentcolor)) linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+	--vaccentcolor-active: rgb(var(--vaccentcolor)) linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+	--vaccentcolor2-hover: rgb(var(--vaccentcolor2)) linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+	--vaccentcolor2-active: rgb(var(--vaccentcolor2)) linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+	
+	--bdfdb-blurple: rgb(var(--vaccentcolor)) !important;
+	--bd-blue: rgb(var(--vaccentcolor)) !important;
+	--bd-blue-hover: var(--vaccentcolor-hover) !important;
+	--bd-blue-active: var(--vaccentcolor-active) !important;
+	--blurple: rgb(var(--vaccentcolor)) !important;
+}
+
+.theme-light, .theme-dark {
+    --header-primary: rgb(var(--fontwhite1));
+    --header-secondary: rgb(var(--fontwhite2));
+    --text-normal: rgb(var(--fontwhite2));
+    --text-muted: rgb(var(--fontwhite4));
+    --text-link: rgb(var(--vaccentcolor));
+    --channels-default: rgb(var(--fontwhite4));
+    --interactive-normal: rgb(var(--fontwhite3));
+    --interactive-hover: rgb(var(--fontwhite2));
+    --interactive-active: rgb(var(--fontwhite1));
+    --interactive-muted: rgb(var(--fontwhite4));
+    --elevation-low: 0 1px 5px 0 rgba(var(--vtransparencycolor), 0.3);
+    --elevation-high: 0 2px 10px 0 rgba(var(--vtransparencycolor), 0.3);
+    --logo-primary: rgb(var(--fontwhite1));
+}
+
+.theme-dark, .theme-light {
+	--text-link: rgb(var(--vlinkcolor));
+	--focus-primary: rgb(var(--vlinkcolor));
+	--radio-group-dot-foreground: rgb(var(--vaccentcolor));
+}
+.theme-light {
+	--logo-primary: rgb(var(--vaccentcolor));
+}
+
+[class*="userPopout"] {
+	--user-popout-position: center;
+}
